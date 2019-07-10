@@ -1,9 +1,15 @@
 import React from 'react';
+import logo from '../assets/images/facebook-logo.svg';
 
 const Header = () => {
 	return (
 		<header className="app-header">
-			<h1>Hello</h1>
+			<div className="app-logo">
+				<img src={logo} />
+			</div>
+			<div className="app-user">
+				<span>Meu Perfil</span>
+			</div>
 		</header>
 	);
 };
