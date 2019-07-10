@@ -1,11 +1,15 @@
 import React from 'react';
-import Home from './components/Index';
+import './App.css';
+
+import Header from './components/Header';
+import PostList from './components/PostList';
 
 function App() {
 	return (
-		<div className="app-container">
-			<Home />
-		</div>
+		<>
+			<Header />
+			<PostList />
+		</>
 	);
 }
 
