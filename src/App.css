@@ -18,18 +18,95 @@ body {
 	color: #ffffff;
 }
 
+.app-user {
+	display: flex;
+	align-items: center;
+}
+
+.app-user span {
+	margin-right: 5px;
+	font-weight: 800;
+}
+
+.app-user svg {
+	font-size: 30px;
+}
+
 .container-list {
 	max-width: 960px;
 	margin: 0 auto;
-	border: 1px red solid;
 	height: 500px;
 	color: #000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.post {
+	margin-bottom: 30px;
+	box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.2);
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: #444444;
 }
 
 .post-header {
-	border: blue qpx solid;
+	display: flex;
+	align-items: center;
+}
+
+.avatar {
+	width: 50px;
+	border-radius: 50%;
 }
 
 .post-details {
-	border: solid 2px;
+	margin-left: 10px;
+}
+
+.post-details span:first-child {
+	font-weight: 900;
+	color: #504e4e;
+}
+
+.post-details span:last-child {
+	font-weight: 100;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #444444;
+}
+
+.post-details span {
+	display: block;
+}
+
+.divider {
+	border-bottom: 1px solid rgba(136, 136, 136, 0.2);
+}
+
+.comment {
+	display: flex;
+	margin: 10px 0;
+}
+
+.comment img {
+	height: 50px;
+}
+
+.comment p {
+	background-color: rgba(153, 153, 153, 0.2);
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0 0 10px 10px;
+	/* color: #444444; */
+}
+
+.comment p span:first-child {
+	font-weight: 700;
+	margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+	.post {
+		margin: 10px;
+	}
 }
